@@ -1,3 +1,5 @@
-Rspec.describe DockingStation do
+require 'DockingStation'
+
+RSpec.describe DockingStation do
 
 end
