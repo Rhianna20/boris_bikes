@@ -1,9 +1,18 @@
-require 'DockingStation.rb'
+require_relative 'bike'
+
 
 class DockingStation 
+
     def release_bike
-        def Bike 
-        end
+        Bike.new
+    end
+    def dock(bike)
+
     end
 end
-
+class Bike
+    def working?
+      true
+  
+    end
+  end
