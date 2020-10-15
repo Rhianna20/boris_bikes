@@ -3,6 +3,7 @@ require 'DockingStation.rb'
 
 
 
+
 docking_station = DockingStation.new
 RSpec.describe DockingStation do 
     it {is_expected.to respond_to :release_bike}
@@ -20,5 +21,11 @@ describe '#release_bike' do
     describe DockingStation do
         it {is_expected.to respond_to(:dock).with(1).argument}
     end
+    end
+end
+
+RSpec.describe "calling a missing method" do
+    it 'raises' do
+        expect { Object.new.foo }.to raise_error(NameError)
     end
 end
